@@ -10,5 +10,7 @@ Geladen werden alle Projekte über die Sln-Datei WCFDokServiceV1.sln
 
 Alle Projekte lassen sich ausführen mit .NET Framework 4.62 ausführen. Es gibt keine weiteren Abhängigkeiten.
 
+Für das Ausführen des WCF-GUI-Clients muss Visual Studio entweder ein weiteres Mal gestartet werden, oder der WCF-Service-Host *WCFDokServiceHostV1.exe* wird z.B. über die Befehlszeile gestartet.
+
 Bei Fragen bitte kurze Mail an info@activetraining.de
 
