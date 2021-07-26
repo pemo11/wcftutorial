@@ -1,4 +1,4 @@
-# wcftutorial
+# Ein kleines WCF-Tutorial (basierend auf dem .NET Framework 4.x)
 Enthält ein kleines WCF-Projekt bestehend aus:
 
 - WCF-Service (WCFDokServiceV1)
