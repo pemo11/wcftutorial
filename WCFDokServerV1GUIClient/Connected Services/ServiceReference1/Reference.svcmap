@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9e251727-3fdd-405f-9416-8c74214b16c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8008/EFDocuments" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="EFDocuments.wsdl" MetadataType="Wsdl" ID="b3eaf503-2bbf-47e2-9ef1-921755bfc553" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?wsdl=wsdl0" />
+    <MetadataFile FileName="EFDocuments1.wsdl" MetadataType="Wsdl" ID="77dadd30-a262-479f-b8d4-b77ad614d14d" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?wsdl" />
+    <MetadataFile FileName="EFDocuments.disco" MetadataType="Disco" ID="f3e0172b-677f-47bc-861d-30663a73f2e4" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?disco" />
+    <MetadataFile FileName="EFDocuments.xsd" MetadataType="Schema" ID="1b201507-aaf1-4e74-883f-ecc2406c0216" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?xsd=xsd0" />
+    <MetadataFile FileName="EFDocuments1.xsd" MetadataType="Schema" ID="0a705016-7c17-47ba-b27e-ade2067ca2a5" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?xsd=xsd1" />
+    <MetadataFile FileName="EFDocuments2.xsd" MetadataType="Schema" ID="1d009c29-1916-495e-a129-e5692702a8ef" SourceId="1" SourceUrl="http://localhost:8008/EFDocuments?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
