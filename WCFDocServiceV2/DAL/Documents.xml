@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<documents>
+  <document id="1000" createDate="01/07/2021">
+    <title>Einführung in das dokumentorientierte Arbeiten</title>
+    <author>P. Monadjemi</author>
+    <mediaType>Pdf</mediaType>
+  </document>
+  <document id="1001" createDate="05/07/2021">
+    <title>Praxis mit einem bekannten DMS</title>
+    <author>P. Monadjemi</author>
+    <mediaType>Office</mediaType>
+  </document>
+  <document id="1002" createDate="06/07/2021">
+    <title>Tipps und Tricks zum DMS</title>
+    <author>Susi Müller</author>
+    <mediaType>Pdf</mediaType>
+  </document>
+</documents>

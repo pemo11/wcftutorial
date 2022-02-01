@@ -2,7 +2,7 @@
 
 using System;
 using System.ServiceModel;
-
+using System.Runtime.InteropServices;
 using WCFDokServiceV1;
 using WCFDokServiceV1.DAL;
 
@@ -14,6 +14,10 @@ namespace WCFDokServiceHostV1
 
         static void Main(string[] args)
         {
+            // PM: Nur provisorisch
+            logMessage = $"### Config-Pfad={RuntimeEnvironment.SystemConfigurationFile} ###";
+            LogHelper.LogInfo(logMessage);
+
             // bei typeof() wird die Klasse angegeben, die das Interface implementiert - ansonsten kann keine Host-Adresse abgerufen werden
             using (ServiceHost host = new ServiceHost(typeof(DokumentServiceV1)))
             {

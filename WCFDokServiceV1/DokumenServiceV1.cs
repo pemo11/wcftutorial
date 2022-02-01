@@ -12,7 +12,7 @@ using WCFDokServiceV1.DAL;
 
 namespace WCFDokServiceV1
 {
-    [ServiceBehavior(Namespace="http://ef/documents", Name="EFDocuments")]
+    [ServiceBehavior(Namespace = "http://ef/documents", Name = "EFDocuments")]
     public class DokumentServiceV1 : IDokumentService
     {
         XDocument xDok = null;
@@ -32,7 +32,8 @@ namespace WCFDokServiceV1
             try
             {
                 dokument = xDok.Descendants("dokument").Where(d => d.Attribute("id").Value == DokId.ToString()).Select(d =>
-                 new Dokument {
+                 new Dokument
+                 {
                      DokId = Int32.Parse(d.Attribute("id").Value),
                      DokAngelegtAm = DateTime.Parse(d.Attribute("angelegtAm").Value),
                      DokAutor = d.Element("autor").Value,
@@ -64,9 +65,9 @@ namespace WCFDokServiceV1
                         DokAutor = d.Element("autor").Value,
                         DokTitel = d.Element("titel").Value,
                         Medientyp = (MediaType)Enum.Parse(typeof(MediaType), d.Element("mediaType").Value)
-                });
+                    });
                 // Sollte sich in die LINQ-Abfrage einbauen lassen
-                foreach(var dok in doks)
+                foreach (var dok in doks)
                 {
                     dokumente.Add(dok);
                 }

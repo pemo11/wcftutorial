@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFDokServiceV1.DAL" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFDokServiceV1.DAL" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfDokument">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Dokument" nillable="true" type="tns:Dokument" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDokument" nillable="true" type="tns:ArrayOfDokument" />
+  <xs:complexType name="Dokument">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DokAngelegtAm" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DokAutor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DokId" type="xs:int" />
+      <xs:element minOccurs="0" name="DokTitel" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Medientyp" type="tns:MediaType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Dokument" nillable="true" type="tns:Dokument" />
+  <xs:simpleType name="MediaType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PdfDokument" />
+      <xs:enumeration value="OfficeDokument" />
+      <xs:enumeration value="Sonstiges" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="MediaType" nillable="true" type="tns:MediaType" />
+</xs:schema>
