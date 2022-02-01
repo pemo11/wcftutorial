@@ -6,6 +6,10 @@ Enthält ein kleines WCF-Projekt bestehend aus:
 - WCF-GUI-Client als WinForms-Anwendung (WCFDokServerV1GUIClient)
 - Ein Test-Projekt für den WCF-Service mit einigen Tests
 
+Inzwischen (01/02/22) habe ich auch ein auf Https basierendes Projekt hinzugefügt (WCFDocServiceV2HttpsClient) und eine Reihe von PowerShell-Skripten (mit Stapeldateien würde es genauso gehen), über die u.a. ein Zertifikat angelegt und per netsh registriert wird.
+
+Alles hat beim Testen funktioniert, was grundsätzlich bedeutet, dass es so geht.
+
 Geladen werden alle Projekte über die Sln-Datei WCFDokServiceV1.sln
 
 Alle Projekte lassen sich ausführen mit .NET Framework 4.62 ausführen. Es gibt keine weiteren Abhängigkeiten.
